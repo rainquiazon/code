@@ -35,5 +35,23 @@ console.log (a); // output; 33
 
 
 
-// 2.
+// 2. In JavaScript, falsy values are like false in javascript. there is a condition that if you use 1 of the six false values.
+      // And these are the six values (0, "",  null, undefined, NaN (Not a Number), false.) And thore are the false values.
+      
+
+//example 1
+if (0) {
+    console.log("This won't run because an empty string is falsy.");
+}
+
+// Example 1: Empty string is falsy
+if ("") {
+    console.log("This won't run because an empty string is falsy.");
+}
+
+// Example 2: null is falsy
+if (null) {
+    console.log("This won't run because null is falsy.");
+}
+
 
