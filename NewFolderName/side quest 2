@@ -1,0 +1,42 @@
+# Quianzon Rain L
+#BSCS - !B
+
+#Questions:
+#1. Explain the difference between map() , filter() , and
+#reduce() in your own words. Provide examples for each.
+
+
+
+#The map() function applies a given function to all items in an iterable (like a list) and returns a new list with the transformed values.
+#Example:
+
+numbers = [1, 2, 3, 4]
+squared = list(map(lambda x: x * x, numbers))
+print(squared) 
+#The filter() function selects elements from an variable based on a condition. only the element true in order to work the filter
+#Example:
+numbers = [1, 2, 3, 4]
+squared = list(map(lambda x: x * x, numbers))
+print(squared) 
+
+#The reduce() function is shortly just multipling and combine them into single result.
+#Example:
+
+from functools import reduce
+numbers = [1, 2, 3, 4]
+total_sum = reduce(lambda x, y: x + y, numbers)
+print(total_sum) 
+
+#2. Convert the function to a lambda function
+#Given Function:
+def multiply(a, b):
+    return a * b
+
+#Converted to Lambda:
+multiply = lambda a, b: a * b
+print(multiply(5, 3))
+
+#3. Convert Names to Uppercase Using map()
+names = ["john", "joseph", "jude"]
+uppercase_names = list(map(str.upper, names))
+print(uppercase_names)  
